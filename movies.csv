@@ -1,50 +1,512 @@
-title,ptv_rating
-Goodbye Lenin,10
-Gattaca,10
-Snow Falling on Cedars,10
-Children of Men,10
-Toy Story,9
-Toy Story 2,9.5
-Toy Story 3,9
-Toy Story 4,9
-Shaun of the Dead,10
-Paul,10
-World's End,8
-Hot Fuzz,9
-The Fountain,9
-Kungfu Panda,9
-Kungfu Panda 2,8.5
-A Bug's Life,9
-Up,10
-Monsters Inc,10
-Monsters University,7
-Princess Mononoke,9
-Spirited Away,10
-Nausicaa of the Valley of the Wind,9
-My Neighbor Tototo,9
-Howl's Moving Castle,7
-Ponyo,7
-Arietty,7
-The Wind Rises,7
-Mulan,9
-The Lion King,9
-Pinocchio,7
-Frozen,7
-John Wick,8
-John Wick 2,7
-2001: A Space Odyssey,10
-Dunkirk,9
-Saving Private Ryan,10
-Tales From Earthsea,6
-Olympus Has Fallen,5
-Sleepless in Seattle,7
-Bridget Jones' Diary,7
-Pitch Perfect,7
-Pitch Perfect 2,6
-Jumanji,7
-Jumanji: Welcome to the Jungle,6
-Ghostbusters,7
-RoboCop,7
-RoboCop 2,6
-RoboCop 3,6
-Starship Troopers,6
+"title","my_rating"
+"21 Grams",0
+"21 Jump Street",0
+"300",0
+"50 First Dates",0
+"50-50",0
+"500 Days of Summer",0
+"9",0
+"A Cat In Paris",0
+"A History of Violence",0
+"A Million Ways to Die in the West",0
+"AI Artificial Intelligence",0
+"After the Wedding",0
+"Aladdin",0
+"Alien Resurrection",0
+"Aliens",0
+"All Is Lost",0
+"Amadeus",0
+"Amazing Grace",0
+"Amelie",0
+"American Sniper",0
+"Angels in America CD1",0
+"Angels in America CD2",0
+"Ant-Man",0
+"Apollo 13",0
+"Army of Darkness",0
+"Atonement",0
+"Attack the Block",0
+"Avatar",0
+"Away We Go",0
+"Babel",0
+"Banlieue 13",0
+"Batman - The Dark Knight Returns part1",0
+"Batman - The Dark Knight Returns part2",0
+"Batman Begins",0
+"Batman Mask of the Phantasm",0
+"Batman The Dark Knight Rises",0
+"Batman The Dark Knight",0
+"Battle Los Angeles",0
+"Beauty and the Beast",0
+"Before Midnight",0
+"Begin Again",0
+"Bhopal - A Prayer for Rain",0
+"Big Fish",0
+"Big Hero 6",0
+"Bill and Ted's Bogus Journey",0
+"Bill and Ted's Excellent Adventure",0
+"Birdman",0
+"Black Hawk Down",0
+"Black Snake Moan",0
+"Black book",0
+"Blade Runner the final cut",0
+"Blades of Glory",0
+"Blue Jasmine",0
+"Boiler Room",0
+"Breach",0
+"Bridge of Spies",0
+"Bridget Jones's Diary",0
+"Cadillac Records",0
+"Capote",0
+"Captain America - The Winter Soldier",0
+"Captain America",0
+"Casino Royale",0
+"Cast Away",0
+"Catch Me If You Can",0
+"Chariots of Fire",0
+"Charlie Wilson's War",0
+"Chef",0
+"Chicken Run",0
+"Children of Men",0
+"Chocolat",0
+"City Lights",0
+"Closer",0
+"Cloud Atlas",0
+"Conan the Barbarian",0
+"Confessions of a Dangerous Mind",0
+"Constantine",0
+"Contact",0
+"Contagion",0
+"Crash",0
+"Crazy Heart",0
+"Crazy Stupid Love",0
+"Creed",0
+"Dallas Buyers Club",0
+"Dan In Real Life",0
+"Date Night",0
+"Dawn of the Planet of the Apes",0
+"Deep Impact",0
+"Definitely Maybe",0
+"Delicacy",0
+"Der Untergang",0
+"Desperado",0
+"Despicable Me",0
+"District 9",0
+"Dodgeball",0
+"Don Jon",0
+"Dredd",0
+"Drive",0
+"Dustbin Baby",0
+"Eastern Promises",0
+"Easy A",0
+"Edge of Tomorrow",0
+"Elizabeth",0
+"Elysium",0
+"Enchanted",0
+"End of Watch",0
+"Enemy Mine",0
+"Enemy Of The State",0
+"Enough Said",0
+"Enter The Dragon",0
+"Equilibrium",0
+"Erin Brockovich",0
+"Europa Europa",0
+"Europa Report",0
+"Ex Machina",0
+"Eye In The Sky",0
+"Fern Gully",0
+"Finding Forrester",0
+"First Knight",0
+"Flight",0
+"Flushed Away",0
+"Focus",0
+"Forgetting Sarah Marshall",0
+"Forrest Gump",0
+"Foxcatcher",0
+"Frequency",0
+"Friday Night Lights",0
+"Friends with Benefits",0
+"Frost Nixon",0
+"Frozen",0
+"Fury",0
+"Galaxy Quest",0
+"Garden State",0
+"Gattaca",0
+"Get Him to the Greek",0
+"Get Smart",0
+"Gladiator",0
+"Glengarry Glen Ross",0
+"Godzilla",0
+"Gone Baby Gone",0
+"Good Kill",0
+"Good Night and Good Luck",0
+"Good Will Hunting",0
+"Goodbye Lenin",0
+"Gran Torino",0
+"Guardians of the Galaxy",0
+"Hanna",0
+"Harold and Kumar Go to White Castle",0
+"Harry Potter 7 - Deathly Hallows part1",0
+"Harry Potter 7 - Deathly Hallows part2",0
+"Hellboy the Golden Army",0
+"Her",0
+"Hercules",0
+"Hero",0
+"Hitch",0
+"Horrible Bosses",0
+"Hors de Prix - Priceless",0
+"Hot Fuzz",0
+"Hot Tub Time Machine",0
+"How To Train Your Dragon",0
+"How to Train Your Dragon 2",0
+"I Am Legend",0
+"I Love You Phillip Morris",0
+"I'm Not There",0
+"Idiocracy",0
+"In Bruges",0
+"Inception",0
+"Independence Day",0
+"Indiana Jones and Raiders of the Lost Ark",0
+"Indiana Jones and the Last Crusade",0
+"Indiana Jones and the Temple of Doom",0
+"Inside Llewyn Davis",0
+"Inside Man",0
+"Inside Out",0
+"Interstellar",0
+"Into The Storm",0
+"Into The Woods",0
+"Iron Man 2",0
+"Iron Man 3",0
+"Iron Man",0
+"Jack Reacher",0
+"Jack Ryan Shadow Recruit",0
+"Jarhead",0
+"Juno",0
+"Kingdom of Heaven (Directors Cut)",0
+"Kingsman",0
+"Kinsey",0
+"Kiss Kiss Bang Bang",0
+"Kungfu Panda 2",0
+"Kungfu Panda",0
+"Lars and the RealGirl",0
+"Leap Year",0
+"Leon the Professional",0
+"Lilo and Stitch",0
+"Lincoln",0
+"Little Miss Sunshine",0
+"Lone Survivor",0
+"Lord of War",0
+"Love Actually",0
+"Love and Other Drugs",0
+"Mad Max 3 - Beyond Thunderdome",0
+"Mad Max Fury Road",0
+"Magic Mike",0
+"Maleficent",0
+"Man Up",0
+"Margin Call",0
+"Master and Commander",0
+"Me and Earl and the Dying Girl",0
+"Megamind",0
+"Men in Black 2",0
+"Men in Black 3",0
+"Men in Black",0
+"Michael Collins",0
+"Milk",0
+"Million Dollar Baby",0
+"Minority Report",0
+"Miss Congeniality",0
+"Miss Pettigrew Lives for a Day",0
+"Mission Impossible Ghost Protocol",0
+"Mission Impossible III",0
+"Mission Impossible Rogue Nation",0
+"Mission Impossible",0
+"Monster Inc",0
+"Monster",0
+"Moon",0
+"Moonrise Kingdom",0
+"Moulin Rouge",0
+"Mr Nobody",0
+"Mrs Doubtfire",0
+"Music and Lyrics",0
+"My Fair Lady",0
+"Nausicaa of the Valley of the Wind",0
+"Nicholas Nickleby",0
+"Nixon",0
+"Non-Stop",0
+"North Country",0
+"Notes on a Scandal",0
+"Now You See Me",0
+"O Brother Where Art Thou",0
+"OSS 117 Cairo Nest of Spies",0
+"Oblivion",0
+"Oceans Eleven",0
+"Oceans Thirteen",0
+"Oceans Twelve",0
+"Old School",0
+"Olympus Has Fallen",0
+"Once Upon A Time in Mexico",0
+"Once",0
+"Osmosis Jones",0
+"Pacific Rim",0
+"Paperman",0
+"Patch Adams",0
+"Patton",0
+"Paycheck",0
+"Percy Jackson Sea of Monsters",0
+"Percy Jackson The Lightning Thief",0
+"Philomena",0
+"Pineapple Express",0
+"Pitch Perfect",0
+"Pollock",0
+"Predator",0
+"Predestination",0
+"Premium Rush",0
+"Pride and Prejudice",0
+"Princess Mononoke",0
+"Prisoners",0
+"Proof of Life",0
+"Public Enemies",0
+"Puncture",0
+"Rachel Getting Married",0
+"Rain Man",0
+"Rango",0
+"Ray",0
+"Renaissance",0
+"Richard III",0
+"Riverworld 2003",0
+"Robot and Frank",0
+"Romeo and Juliet",0
+"Rounders",0
+"Run Fatboy Run",0
+"Run Lola Run",0
+"Rush",0
+"Salmon Fishing in the Yemen",0
+"Saving Face",0
+"Saving Mrks",0
+"Saving Private Ryan",0
+"Scott Pilgrim vs The World",0
+"Seraphim Falls",0
+"Serenity",0
+"Seven Years in Tibet",0
+"Shakespeare in Love",0
+"Shaolin Soccer",0
+"Shark Tale",0
+"Shaun of The Dead",0
+"Shaun the Sheep Movie",0
+"Shooter",0
+"Shrek 2",0
+"Shrek Forever After",0
+"Shrek the Third",0
+"Shrek",0
+"Sicario",0
+"Side Effects",0
+"Sideways",0
+"Silent Running",0
+"Skyfall",0
+"Sleepy Hollow",0
+"Slither",0
+"Sneakers",0
+"Snow Falling On Cedars",0
+"Snowpiercer",0
+"Something The Lord Made",0
+"Song of the Sea",0
+"Southpaw",0
+"Space Cowboys",0
+"Spaceballs",0
+"Sphere",0
+"Spider Man 2",0
+"Spider Man 3",0
+"Spider Man",0
+"Spirited Away",0
+"Spy Game",0
+"Spy",0
+"Star Trek First Contact",0
+"Star Trek III The Search for Spock",0
+"Star Trek IV The Voyage Home",0
+"Star Trek Into Darkness",0
+"Star Trek VI The Undiscovered Country",0
+"Star Trek",0
+"Star Wars IV A New Hope",0
+"Star Wars V The Empire Strikes Back",0
+"Star Wars VI Return of the Jedi",0
+"Stardust",0
+"Starship Troopers",0
+"Starsky And Hutch",0
+"Stranger Than Fiction",0
+"Sunshine",0
+"Super 8",0
+"Superbad",0
+"Surfs Up",0
+"Taken",0
+"Talladega Nights",0
+"Tangled",0
+"Ted",0
+"Tell No One",0
+"Ten Inch Hero",0
+"Terminator 3",0
+"Terminator Salvation",0
+"The 40 Year Old Virgin",0
+"The Abyss",0
+"The Adjustment Bureau",0
+"The American President",0
+"The Arrival",0
+"The Artist",0
+"The Avengers Age of Ultron",0
+"The Avengers",0
+"The Aviator",0
+"The Bank Job",0
+"The Big Red One",0
+"The Birdcage",0
+"The Blind Side",0
+"The Book of Eli",0
+"The Boondock Saints",0
+"The Bourne Identity",0
+"The Bourne Supremacy",0
+"The Bourne Ultimatum",0
+"The Cat Returns",0
+"The Cider House Rules",0
+"The Company You Keep",0
+"The Contender",0
+"The Croods",0
+"The Dark Crystal",0
+"The Duchess",0
+"The Emperors New Groove",0
+"The End of the Tour",0
+"The English Patient",0
+"The Fantastic Mr Fox",0
+"The Fault in our Stars",0
+"The Fifth Element",0
+"The First Time",0
+"The Five-Year Engagement",0
+"The Forbidden Kingdom",0
+"The Fountain",0
+"The Game",0
+"The Girl with the Dragon Tattoo",0
+"The Golden Compass",0
+"The Good The Bad The Weird",0
+"The Good The Bad and The Ugly",0
+"The Goonies",0
+"The Great Raid",0
+"The Grey",0
+"The Heat",0
+"The Help",0
+"The Hudsucker Proxy",0
+"The Hunt for Red October",0
+"The Hunter",0
+"The Hurt Locker",0
+"The Illusionist",0
+"The Imitation Game",0
+"The Incredible Burt Wonderstone",0
+"The Incredible Hulk",0
+"The International",0
+"The Intouchables",0
+"The Invention of Lying",0
+"The Italian Job",0
+"The Judge",0
+"The Karate Kid 1984",0
+"The Karate Kid 2010",0
+"The Kid",0
+"The King's Speech",0
+"The Kingdom",0
+"The Last Samurai",0
+"The Lego Movie",0
+"The Lion King",0
+"The Lives of Others",0
+"The Lord of The Rings - The Fellowship of the ring",0
+"The Lord of The Rings - The Return of the king",0
+"The Lord of The Rings - The Two Towers",0
+"The Lovely Bones",0
+"The Magnificent Seven",0
+"The Man From Earth",0
+"The Man In The Iron Mask",0
+"The Matrix Reloaded",0
+"The Matrix Revolutions",0
+"The Matrix",0
+"The Mighty Ducks",0
+"The Mummy",0
+"The Natural",0
+"The Negotiator",0
+"The Nightmare Before Christmas",0
+"The Other Guys",0
+"The Postman",0
+"The Prestige",0
+"The Prince of Egypt",0
+"The Princess Bride",0
+"The Princess and the Frog",0
+"The Proposal",0
+"The Pruitt-Igoe Myth",0
+"The Pursuit of Happyness",0
+"The Raid - Redemption",0
+"The Reader",0
+"The Rock",0
+"The Rocketeer",0
+"The Score",0
+"The Secret Life of Walter Mitty",0
+"The Secret of Kells",0
+"The Shawshank Redemption",0
+"The Sixth Sense",0
+"The Spiderwick Chronicles",0
+"The Theory of Everything",0
+"The Transformers Movie",0
+"The Transporter",0
+"The Tree of Life",0
+"The Truman Show",0
+"The Wackness",0
+"The Way Way Back",0
+"The Way of the Dragon",0
+"The Wind Rises",0
+"The Wind that Shakes the Barley",0
+"The Wolf of Wall Street",0
+"The World's End",0
+"The Young Victoria",0
+"This Is The End",0
+"This is Spinal Tap",0
+"Three Amigos",0
+"Three Kings",0
+"Total Recall 2012",0
+"Toy Story 2",0
+"Toy Story 3",0
+"Toy Story",0
+"Transcendence",0
+"Tron Legacy",0
+"Tropic Thunder",0
+"Trouble with the Curve",0
+"True Grit",0
+"True Lies",0
+"Tucker and Dale vs Evil",0
+"Ultraviolet",0
+"Unbroken",0
+"United 93",0
+"Up In The Air",0
+"V for Vendetta",0
+"VICE Special Report Countdown to Zero - Full (HBO)",0
+"Venus",0
+"W",0
+"Waking Sleeping Beauty",0
+"Walk Hard",0
+"Wall Street 2 Money Never Sleeps",0
+"Wanted",0
+"War of the Worlds",0
+"Warm Bodies",0
+"Wasabi",0
+"Waterworld",0
+"Wedding Crashers",0
+"What We Do in the Shadows",0
+"Where The Wild Things Are",0
+"Whiplash",0
+"Willow",0
+"Winter's Bone",0
+"Wolf Children",0
+"Wreck-It Ralph",0
+"X-Men 2",0
+"X-Men 3",0
+"X-Men Days of Futures Past",0
+"X-Men First Class",0
+"X-Men",0
+"Young Adult",0
+"Zack and Miri Make a Porno",0
+"Zathura",0
+"Zero Dark Thirty",0
+"Zodiac",0
+"Zombieland",0
+"Zootopia",0
