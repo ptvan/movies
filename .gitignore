@@ -103,3 +103,6 @@ venv.bak/
 # mypy
 .mypy_cache/
 .Rhistory
+.vscode/launch.json
+wp_movies_10k.ndjson
+.vscode/settings.json
