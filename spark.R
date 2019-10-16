@@ -17,8 +17,19 @@ sc <- spark_connect(master = "local",
                     config = conf)
 
 # read data directly from disk
-spark_read_csv(sc, "dat","movies.csv")
+movies <- spark_read_csv(sc, "dat","movies.csv")
 
 # alternatively, we can copy objects from the R session into the Spark scope
-# copy_to(sc, iris, "iris")
+movies <- copy_to(sc, movies, "movies")
 
+# list contents of our spark context
+src_tbls(sc)
+
+# build an ALS model for our movies
+model <- ml_als(movies)
+
+# predict
+ml_predict(model, movies_tbl)
+
+# recommend
+ml_recommend(model, type = "item", 1)
