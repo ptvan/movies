@@ -82,4 +82,4 @@ my_ratings = [
 my_ratings_RDD = sc.parallelize(my_ratings)
 complete_data_with_my_ratings_RDD = complete_ratings_data.union(my_ratings_RDD)
 new_ratings_model = ALS.train(complete_data_with_my_ratings_RDD, best_rank, seed=seed,
-                              iterations=iterations, lambda_=regularization_par
+                              iterations=iterations, lambda_=regularization_parameter)
