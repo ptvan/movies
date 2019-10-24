@@ -3,8 +3,11 @@ from pyspark import SparkContext
 from pyspark.mllib.recommendation import ALS
 import math
 
-# remember to add `export PYSPARK_PYTHON=/usr/bin/python3` to ~/.bash_profile
+# remember to add `export PYSPARK_PYTHON=/path/to/python3/` to ~/.bash_profile
 # or Python version mismatch will occur
+
+# if installing spark on OSX, make sure to install adoptopenjdk8
+# and `export JAVA_HOME=/path/to/openjdk8`
 
 sc = SparkContext("local", "Movie Recommender")
 my_ratings = sc.textFile("my_ratings.csv")
