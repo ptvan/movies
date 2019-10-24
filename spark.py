@@ -14,7 +14,7 @@ sc = SparkContext("local", "Movie Recommender")
 my_ratings = sc.textFile("my_ratings.csv")
 small_ratings_raw = sc.textFile(os.path.join('movielens-100k', 'ratings.csv'))
 small_ratings_raw_header = small_ratings_raw.take(1)[0]
-small_ratings = small_ratings_raw.filter(lambda line: line!=small_ratings_raw_header)\
+small_ratings = small_ratings_raw.filter(lambda line: line != small_ratings_raw_header)\
     .map(lambda line: line.split(",")).map(lambda tokens: (tokens[0], tokens[1], tokens[2])).cache()
 
 
@@ -64,7 +64,22 @@ complete_ratings_raw_data_header = complete_ratings_raw_data.take(1)[0]
 complete_ratings_data = complete_ratings_raw_data.filter(lambda line: line!=complete_ratings_raw_data_header)\
     .map(lambda line: line.split(",")).map(lambda tokens: (int(tokens[0]),int(tokens[1]),float(tokens[2]))).cache()
 
-training_RDD, test_RDD = complete_ratings_data.randomSplit([7, 3], seed=0L)
+training_RDD, test_RDD = complete_ratings_data.randomSplit([7, 3], seed=0)
 
 complete_model = ALS.train(training_RDD, best_rank, seed=seed,
                            iterations=iterations, lambda_=regularization_parameter)
+
+
+my_ID = 0
+
+### LOAD my ratings
+# The format of each line is (userID, movieID, rating)
+my_ratings = [
+     (0,1,5), # Toy Story (1995)
+     (0,296,3), # Pulp Fiction (1994)
+     ]
+
+my_ratings_RDD = sc.parallelize(my_ratings)
+complete_data_with_my_ratings_RDD = complete_ratings_data.union(my_ratings_RDD)
+new_ratings_model = ALS.train(complete_data_with_my_ratings_RDD, best_rank, seed=seed,
+                              iterations=iterations, lambda_=regularization_par
