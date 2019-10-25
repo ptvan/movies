@@ -25,7 +25,7 @@ all_movies = pd.read_csv('movielens-20m/movies.csv')
 all_movies = all_movies.drop(columns=['genres'])
 
 # remove the year of release from titles
-all_movies["title"] = all_movies["title"].replace("\\([0-9]{4}\\)", "", regex=True)
+all_movies["title"] = all_movies["title"].replace(" \\([0-9]{4}\\)", "", regex=True)
 
 # merge with my_ratings
 merged_ratings = pd.merge(all_movies, my_ratings, on='title', how='inner')
