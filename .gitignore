@@ -106,6 +106,7 @@ venv.bak/
 .vscode/launch.json
 wp_movies_10k.ndjson
 .vscode/settings.json
+.idea
 
 movielens-20m/
 .DS_Store
