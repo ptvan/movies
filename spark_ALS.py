@@ -1,16 +1,15 @@
-import pyspark
 from pyspark import SparkContext
-from pyspark.mllib.recommendation import ALS
+from pyspark.mllib.recommendation import ALS, MatrixFactorizationModel
 import os
 import math
 
-# remember to add `export PYSPARK_PYTHON=/path/to/python3/` to ~/.bash_profile
+# NOTE 1: remember to add `export PYSPARK_PYTHON=/path/to/python3/` to ~/.bash_profile
 # or Python version mismatch will occur
 
-# if installing spark on OSX, make sure to install adoptopenjdk8
+# NOTE 2: if installing spark on OSX, make sure to install adoptopenjdk8
 # and `export JAVA_HOME=/path/to/openjdk8`
 
-sc = SparkContext("local", "Movie Recommender")
+sc = SparkContext("local", "Movie ALS")
 small_ratings_raw = sc.textFile(os.path.join('movielens-100k', 'ratings.csv'))
 small_ratings_raw_header = small_ratings_raw.take(1)[0]
 small_ratings = small_ratings_raw.filter(lambda line: line != small_ratings_raw_header)\
@@ -54,17 +53,20 @@ predictions = model.predictAll(test_for_predict_RDD).map(lambda r: ((r[0], r[1])
 rates_and_preds = test_RDD.map(lambda r: ((int(r[0]), int(r[1])), float(r[2]))).join(predictions)
 error = math.sqrt(rates_and_preds.map(lambda r: (r[1][0] - r[1][1]) ** 2).mean())
 
-
 complete_ratings_raw_data = sc.textFile(os.path.join('movielens-20m', 'ratings.csv'))
 complete_ratings_raw_data_header = complete_ratings_raw_data.take(1)[0]
 
 complete_ratings_data = complete_ratings_raw_data.filter(lambda line: line!=complete_ratings_raw_data_header)\
-    .map(lambda line: line.split(",")).map(lambda tokens: (int(tokens[0]),int(tokens[1]),float(tokens[2]))).cache()
+    .map(lambda line: line.split(",")).map(lambda tokens: (int(tokens[0]), int(tokens[1]), float(tokens[2]))).cache()
 
 training_RDD, test_RDD = complete_ratings_data.randomSplit([7, 3], seed=0)
 
 complete_model = ALS.train(training_RDD, best_rank, seed=seed,
                            iterations=iterations, lambda_=regularization_parameter)
+
+complete_model.save(sc, "spark_ALS_model")
+
+complete_model = MatrixFactorizationModel.load(sc, "spark_ALS_model")
 
 # LOAD my ratings
 # The format of each line is (userID, movieID, rating)

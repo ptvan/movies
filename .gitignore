@@ -111,3 +111,4 @@ wp_movies_10k.ndjson
 movielens-20m/
 .DS_Store
 movielens-100k/
+/spark_ALS_model/
