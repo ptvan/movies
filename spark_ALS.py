@@ -11,7 +11,6 @@ import math
 # and `export JAVA_HOME=/path/to/openjdk8`
 
 sc = SparkContext("local", "Movie Recommender")
-my_ratings = sc.textFile("my_ratings.csv")
 small_ratings_raw = sc.textFile(os.path.join('movielens-100k', 'ratings.csv'))
 small_ratings_raw_header = small_ratings_raw.take(1)[0]
 small_ratings = small_ratings_raw.filter(lambda line: line != small_ratings_raw_header)\
@@ -69,15 +68,11 @@ training_RDD, test_RDD = complete_ratings_data.randomSplit([7, 3], seed=0)
 complete_model = ALS.train(training_RDD, best_rank, seed=seed,
                            iterations=iterations, lambda_=regularization_parameter)
 
-
 my_ID = 0
 
-### LOAD my ratings
+# LOAD my ratings
 # The format of each line is (userID, movieID, rating)
-my_ratings = [
-     (0,1,5), # Toy Story (1995)
-     (0,296,3), # Pulp Fiction (1994)
-     ]
+my_ratings = sc.textFile("my_ratings_cleaned.csv")
 
 my_ratings_RDD = sc.parallelize(my_ratings)
 complete_data_with_my_ratings_RDD = complete_ratings_data.union(my_ratings_RDD)
