@@ -16,7 +16,6 @@ small_ratings_raw_header = small_ratings_raw.take(1)[0]
 small_ratings = small_ratings_raw.filter(lambda line: line != small_ratings_raw_header)\
     .map(lambda line: line.split(",")).map(lambda tokens: (tokens[0], tokens[1], tokens[2])).cache()
 
-
 seed = 5
 iterations = 10
 regularization_parameter = 0.1
@@ -47,7 +46,6 @@ for rank in ranks:
         best_rank = rank
 
 # print 'The best model was trained with rank %s' % best_rank
-
 predictions.take(3)
 
 model = ALS.train(training_RDD, best_rank, seed=seed, iterations=iterations,
@@ -68,10 +66,9 @@ training_RDD, test_RDD = complete_ratings_data.randomSplit([7, 3], seed=0)
 complete_model = ALS.train(training_RDD, best_rank, seed=seed,
                            iterations=iterations, lambda_=regularization_parameter)
 
-my_ID = 0
-
 # LOAD my ratings
 # The format of each line is (userID, movieID, rating)
+# our userID is 0 to avoid conflict with userIDs from the training set
 my_ratings = sc.textFile("my_ratings_cleaned.csv")
 
 my_ratings_RDD = sc.parallelize(my_ratings)
