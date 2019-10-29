@@ -53,6 +53,13 @@ predictions = model.predictAll(test_for_predict_RDD).map(lambda r: ((r[0], r[1])
 rates_and_preds = test_RDD.map(lambda r: ((int(r[0]), int(r[1])), float(r[2]))).join(predictions)
 error = math.sqrt(rates_and_preds.map(lambda r: (r[1][0] - r[1][1]) ** 2).mean())
 
+complete_movies_file = os.path.join('movielens-20m', 'movies.csv')
+complete_movies_raw_data = sc.textFile(complete_movies_file)
+complete_movies_raw_data_header = complete_movies_raw_data.take(1)[0]
+complete_movies_data = complete_movies_raw_data.filter(lambda line: line != complete_movies_raw_data_header) \
+    .map(lambda line: line.split(",")).map(lambda tokens: (int(tokens[0]), tokens[1], tokens[2])).cache()
+complete_movies_titles = complete_movies_data.map(lambda x: (int(x[0]), x[1]))
+
 complete_ratings_raw_data = sc.textFile(os.path.join('movielens-20m', 'ratings.csv'))
 complete_ratings_raw_data_header = complete_ratings_raw_data.take(1)[0]
 
@@ -72,8 +79,14 @@ complete_model = MatrixFactorizationModel.load(sc, "spark_ALS_model")
 # The format of each line is (userID, movieID, rating)
 # our userID is 0 to avoid conflict with userIDs from the training set
 my_ratings = sc.textFile("my_ratings_cleaned.csv")
+my_ratings_header = my_ratings.take(1)[0]
+my_ratings = my_ratings.filter(lambda line: line!=my_ratings_header)\
+    .map(lambda line: line.split(",")).map(lambda tokens: (int(tokens[0]), int(tokens[1]), float(tokens[2]))).cache()
 
-my_ratings_RDD = sc.parallelize(my_ratings)
-complete_data_with_my_ratings_RDD = complete_ratings_data.union(my_ratings_RDD)
+
+complete_data_with_my_ratings_RDD = complete_ratings_data.union(my_ratings)
 new_ratings_model = ALS.train(complete_data_with_my_ratings_RDD, best_rank, seed=seed,
                               iterations=iterations, lambda_=regularization_parameter)
+
+new_user_ratings_ids = map(lambda x: x[1], new_user_ratings)
+new_user_unrated_movies_RDD = (complete_ratings_data.filter(lambda x: x[0] not in new_user_ratings_ids).map(lambda x: (new_user_ID, x[0])))
