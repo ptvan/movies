@@ -9,7 +9,6 @@ my_ratings.count()
 list(my_ratings.columns)
 my_ratings.head()
 
-
 # running ALS requires the data to have the format
 # {userid, movieid, rating}
 # create a new column with bogus userID 0
@@ -49,7 +48,3 @@ merged_ratings = merged_ratings[~merged_ratings.duplicated(subset="title")]
 merged_ratings = merged_ratings.drop(columns=['title'])
 
 merged_ratings.to_csv("my_ratings_cleaned.csv", index=False)
-
-
-
-

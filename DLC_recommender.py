@@ -8,6 +8,7 @@ import numpy as np
 import random
 from sklearn import svm
 
+# from Deep Learning Cookbook
 #%%
 with open('wp_movies_10k.ndjson') as fin:
     movies = [json.loads(l) for l in fin]
