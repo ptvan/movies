@@ -78,7 +78,7 @@ complete_model = MatrixFactorizationModel.load(sc, "spark_ALS_model")
 # LOAD my ratings
 # The format of each line is (userID, movieID, rating)
 # our userID is 0 to avoid conflict with userIDs from the training set
-my_ratings = sc.textFile("my_ratings_cleaned.csv")
+my_ratings = sc.textFile("my_ratings_notitle.csv")
 my_ratings_header = my_ratings.take(1)[0]
 my_ratings = my_ratings.filter(lambda line: line!=my_ratings_header)\
     .map(lambda line: line.split(",")).map(lambda tokens: (int(tokens[0]), int(tokens[1]), float(tokens[2]))).cache()

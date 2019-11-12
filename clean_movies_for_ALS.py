@@ -43,8 +43,8 @@ merged_ratings[merged_ratings['title'] == "Beauty and the Beast"]
 # merged_ratings = merged_ratings[~merged_ratings.title.duplicated] is equivalent
 # note that negation is ~ and not ! for pandas
 merged_ratings = merged_ratings[~merged_ratings.duplicated(subset="title")]
+merged_ratings.to_csv("my_ratings_withtitle.csv", index=False)
 
 # we don't need the full title for recommendation
 merged_ratings = merged_ratings.drop(columns=['title'])
-
-merged_ratings.to_csv("my_ratings_cleaned.csv", index=False)
+merged_ratings.to_csv("my_ratings_notitle.csv", index=False)
