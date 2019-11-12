@@ -5,7 +5,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 # read in the original CSV file which has the format
 # {title, my_rating}
-my_ratings = pd.read_csv('my_ratings_with.csv')
+my_ratings = pd.read_csv('my_ratings_withtitle_withsynopsis.csv')
 
 # getting a glimpse of the data
 my_ratings.count()

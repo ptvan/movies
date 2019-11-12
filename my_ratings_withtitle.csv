@@ -1,0 +1,220 @@
+movieId,title,user_id,rating
+1,Toy Story,0,7
+14,Nixon,0,8
+150,Apollo 13,0,9
+163,Desperado,0,7
+168,First Knight,0,6
+208,Waterworld,0,6
+356,Forrest Gump,0,8
+380,True Lies,0,6
+588,Aladdin,0,8
+595,Beauty and the Beast,0,6
+914,My Fair Lady,0,7
+924,2001: A Space Odyssey,0,10
+1200,Aliens,0,8
+1214,Alien,0,8
+1215,Army of Darkness,0,7
+1225,Amadeus,0,7
+1272,Patton,0,7
+1291,Indiana Jones and the Last Crusade,0,7
+1396,Sneakers,0,8
+1483,Crash,0,6
+1566,Hercules,0,6
+1584,Contact,0,9
+1619,Seven Years in Tibet,0,7
+1653,Gattaca,0,9
+1676,Starship Troopers,0,6
+1704,Good Will Hunting,0,9
+1779,Sphere,0,7
+1876,Deep Impact,0,8
+1882,Godzilla,0,6
+1961,Rain Man,0,6
+2028,Saving Private Ryan,0,10
+2115,Indiana Jones and the Temple of Doom,0,6
+2193,Willow,0,7
+2252,Hero,0,7
+2336,Elizabeth,0,7
+2890,Three Kings,0,6
+3033,Spaceballs,0,7
+3081,Sleepy Hollow,0,7
+3114,Toy Story 2,0,7
+3175,Galaxy Quest,0,8
+3307,City Lights,0,8
+3494,True Grit,0,8
+3510,Frequency,0,7
+3527,Predator,0,6
+3578,Gladiator,0,6
+3668,Romeo and Juliet,0,7
+3720,Sunshine,0,7
+3751,Chicken Run,0,9
+3793,X-Men,0,6
+3827,Space Cowboys,0,7
+3998,Proof of Life,0,7
+4014,Chocolat,0,7
+4017,Pollock,0,8
+4019,Finding Forrester,0,7
+4022,Cast Away,0,10
+4025,Miss Congeniality,0,6
+4246,Bridget Jones's Diary,0,6
+4306,Shrek,0,6
+4308,Moulin Rouge,0,7
+4719,Osmosis Jones,0,6
+4901,Spy Game,0,8
+5010,Black Hawk Down,0,6
+5410,Silent Running,0,8
+5445,Minority Report,0,8
+5628,Wasabi,0,6
+5796,Casino Royale,0,7
+5903,Equilibrium,0,6
+5989,Catch Me If You Can,0,9
+6942,Love Actually,0,7
+7147,Big Fish,0,7
+7163,Paycheck,0,7
+7293,50 First Dates,0,6
+7579,Pride and Prejudice,0,7
+8158,Rush,0,7
+8360,Shrek 2,0,6
+8784,Garden State,0,7
+8807,Harold and Kumar Go to White Castle,0,6
+8907,Shark Tale,0,6
+8949,Sideways,0,7
+8958,Ray,0,7
+25825,Fury,0,7
+26764,Captain America,0,7
+30707,Million Dollar Baby,0,8
+31685,Hitch,0,7
+31696,Constantine,0,6
+33162,Kingdom of Heaven,0,7
+33649,Saving Face,0,7
+33794,Batman Begins,0,8
+34048,War of the Worlds,0,6
+34162,Wedding Crashers,0,6
+34405,Serenity,0,7
+36529,Lord of War,0,8
+40278,Jarhead,0,6
+40851,Zathura,0,7
+43928,Ultraviolet,0,5
+44191,V for Vendetta,0,7
+44199,Inside Man,0,6
+46578,Little Miss Sunshine,0,8
+47997,Idiocracy,0,6
+48774,Children of Men,0,10
+48982,Flushed Away,0,7
+51084,Music and Lyrics,0,6
+51255,Hot Fuzz,0,8
+51662,300,0,6
+51935,Shooter,0,6
+52245,Blades of Glory,0,6
+53121,Shrek the Third,0,5
+53123,Once,0,7
+54259,Stardust,0,7
+54503,Superbad,0,7
+55052,Atonement,0,8
+56152,Enchanted,0,7
+56174,I Am Legend,0,6
+56367,Juno,0,7
+56788,Charlie Wilson's War,0,7
+57669,In Bruges,0,7
+58162,Run Fatboy Run,0,6
+58490,Miss Pettigrew Lives for a Day,0,7
+58998,Forgetting Sarah Marshall,0,7
+59315,Iron Man,0,6
+59369,Taken,0,6
+60072,Wanted,0,6
+60126,Get Smart,0,7
+61024,Pineapple Express,0,7
+61132,Tropic Thunder,0,6
+62434,Zack and Miri Make a Porno,0,6
+64614,Gran Torino,0,7
+66665,Away We Go,0,7
+68237,Moon,0,8
+68358,Star Trek,0,7
+68791,Terminator Salvation,0,6
+69992,Ten Inch Hero,0,7
+70286,District 9,0,7
+71057,9,0,8
+71535,Zombieland,0,7
+72998,Avatar,0,7
+73023,Crazy Heart,0,7
+75395,Frozen,0,7
+76077,Hot Tub Time Machine,0,6
+76293,Date Night,0,6
+77561,Iron Man 2,0,5
+78499,Toy Story 3,0,7
+79091,Despicable Me,0,7
+79132,Inception,0,9
+80549,Easy A,0,6
+81564,Megamind,0,6
+84944,Rango,0,6
+86190,Hanna,0,6
+87306,Super 8,0,7
+87869,Horrible Bosses,0,6
+88129,Drive,0,7
+88405,Friends with Benefits,0,6
+89470,Contagion,0,9
+89904,The Artist,0,7
+93510,21 Jump Street,0,7
+93740,Salmon Fishing in the Yemen,0,7
+95441,Ted,0,6
+96079,Skyfall,0,6
+96417,Premium Rush,0,7
+96588,Pitch Perfect,0,7
+96693,Trouble with the Curve,0,7
+96737,Dredd,0,7
+97752,Cloud Atlas,0,7
+97913,Wreck-It Ralph,0,6
+98154,Lincoln,0,9
+98491,Paperman,0,7
+98961,Zero Dark Thirty,0,7
+99007,Warm Bodies,0,7
+99112,Jack Reacher,0,7
+100714,Before Midnight,0,6
+101362,Olympus Has Fallen,0,6
+101864,Oblivion,0,6
+102125,Iron Man 3,0,5
+102445,Star Trek Into Darkness,0,6
+102903,Now You See Me,0,6
+103228,Pacific Rim,0,7
+103253,Elysium,0,7
+103306,Europa Report,0,7
+103980,Blue Jasmine,0,6
+105954,All Is Lost,0,8
+106766,Inside Llewyn Davis,0,6
+106920,Her,0,6
+107069,Lone Survivor,0,7
+107141,Saving Mr. Banks,0,7
+107406,Snowpiercer,0,7
+109487,Interstellar,0,9
+110730,Transcendence,0,6
+111443,Chef,0,8
+111622,Begin Again,0,8
+111659,Maleficent,0,7
+111743,A Million Ways to Die in the West,0,6
+111759,Edge of Tomorrow,0,7
+112175,How to Train Your Dragon 2,0,5
+112552,Whiplash,0,7
+112623,Dawn of the Planet of the Apes,0,6
+112852,Guardians of the Galaxy,0,6
+115122,What We Do in the Shadows,0,7
+115713,Ex Machina,0,8
+116797,The Imitation Game,0,7
+117176,The Theory of Everything,0,8
+117444,Song of the Sea,0,7
+118702,Unbroken,0,6
+120380,The Fountain,0,9
+122470,Inside Out,0,7
+122900,Ant-Man,0,8
+127114,The End of the Tour,0,6
+127202,Me and Earl and the Dying Girl,0,8
+131656,Shaun the Sheep Movie,0,6
+132112,Good Kill,0,7
+134368,Spy,0,7
+139644,Sicario,0,7
+143385,Bridge of Spies,0,7
+146656,Creed,0,6
+152081,Zootopia,0,6
+158657,Dustbin Baby,0,6
+162350,The Magnificent Seven,0,6
+163745,The Kid,0,8
+170827,The Mummy,0,6
+172679,The Heat,0,6
