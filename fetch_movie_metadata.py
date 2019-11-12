@@ -23,7 +23,7 @@ for title in my_movies['title']:
     # print("\n")
 
 # write back out to new file
-my_movies.to_csv("my_ratings_withtitle_withsynopsis.csv", index=False)
+my_movies.to_csv("my_ratings_withtitle_withsynopsis.txt", index=False, sep="\t")
 
 
 
